@@ -1,22 +1,24 @@
 # Deep Learning Homework: Charity Funding Predictor
 
+![charity funding predictor](./Images/charity_picture.jpeg)
+
 ## Background
 
 The non-profit foundation Alphabet Soup wants to create an algorithm to predict whether or not applicants for funding will be successful. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
-* **EIN** and **NAME**—Identification columns
-* **APPLICATION_TYPE**—Alphabet Soup application type
-* **AFFILIATION**—Affiliated sector of industry
-* **CLASSIFICATION**—Government organization classification
-* **USE_CASE**—Use case for funding
-* **ORGANIZATION**—Organization type
-* **STATUS**—Active status
-* **INCOME_AMT**—Income classification
-* **SPECIAL_CONSIDERATIONS**—Special consideration for application
-* **ASK_AMT**—Funding amount requested
-* **IS_SUCCESSFUL**—Was the money used effectively
+- **EIN** and **NAME**—Identification columns
+- **APPLICATION_TYPE**—Alphabet Soup application type
+- **AFFILIATION**—Affiliated sector of industry
+- **CLASSIFICATION**—Government organization classification
+- **USE_CASE**—Use case for funding
+- **ORGANIZATION**—Organization type
+- **STATUS**—Active status
+- **INCOME_AMT**—Income classification
+- **SPECIAL_CONSIDERATIONS**—Special consideration for application
+- **ASK_AMT**—Funding amount requested
+- **IS_SUCCESSFUL**—Was the money used effectively
 
 ## Instructions
 
@@ -27,13 +29,15 @@ Using your knowledge of Pandas and the Scikit-Learn’s `StandardScaler()`, you�
 Using the information we have provided in the starter code, follow the instructions to complete the preprocessing steps.
 
 1. Read in the charity_data.csv to a Pandas DataFrame, and be sure to identify the following in your dataset:
-  * What variable(s) are considered the target(s) for your model?
-  * What variable(s) are considered the feature(s) for your model?
+
+- What variable(s) are considered the target(s) for your model?
+- What variable(s) are considered the feature(s) for your model?
+
 2. Drop the `EIN` and `NAME` columns.
 3. Determine the number of unique values for each column.
 4. For those columns that have more than 10 unique values, determine the number of data points for each unique value.
-6. Use the number of data points for each unique value to pick a cutoff point to bin "rare" categorical variables together in a new value, `Other`, and then check if the binning was successful.
-7. Use `pd.get_dummies()` to encode categorical variables
+5. Use the number of data points for each unique value to pick a cutoff point to bin "rare" categorical variables together in a new value, `Other`, and then check if the binning was successful.
+6. Use `pd.get_dummies()` to encode categorical variables
 
 ### Step 2: Compile, Train, and Evaluate the Model
 
@@ -56,14 +60,14 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
 
 Optimize your model in order to achieve a target predictive accuracy higher than 75% by using any or all of the following:
 
-* Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:
-  * Dropping more or fewer columns.
-  * Creating more bins for rare occurrences in columns.
-  * Increasing or decreasing the number of values for each bin.
-* Adding more neurons to a hidden layer.
-* Adding more hidden layers.
-* Using different activation functions for the hidden layers.
-* Adding or reducing the number of epochs to the training regimen.
+- Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:
+  - Dropping more or fewer columns.
+  - Creating more bins for rare occurrences in columns.
+  - Increasing or decreasing the number of values for each bin.
+- Adding more neurons to a hidden layer.
+- Adding more hidden layers.
+- Using different activation functions for the hidden layers.
+- Adding or reducing the number of epochs to the training regimen.
 
 **NOTE**: You will not lose points if your model does not achieve target performance, as long as you make three attempts at optimizing the model in your jupyter notebook.
 
@@ -83,22 +87,23 @@ The report should contain the following:
 
 2. **Results**: Using bulleted lists and images to support your answers, address the following questions.
 
-  * Data Preprocessing
-    * What variable(s) are considered the target(s) for your model?
-    * What variable(s) are considered to be the features for your model?
-    * What variable(s) are neither targets nor features, and should be removed from the input data?
-  * Compiling, Training, and Evaluating the Model
-    * How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    * Were you able to achieve the target model performance?
-    * What steps did you take to try and increase model performance?
+- Data Preprocessing
+  - What variable(s) are considered the target(s) for your model?
+  - What variable(s) are considered to be the features for your model?
+  - What variable(s) are neither targets nor features, and should be removed from the input data?
+- Compiling, Training, and Evaluating the Model
+  - How many neurons, layers, and activation functions did you select for your neural network model, and why?
+  - Were you able to achieve the target model performance?
+  - What steps did you take to try and increase model performance?
 
 3. **Summary**: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 
-- - -
+---
 
 ## Rubric
 
 [Unit 21 - Deep Learning Homework Rubric - Charity Funding Predictor](https://docs.google.com/document/d/1SLOROX0lqZwa1ms-iRbHMQr1QSsMT2k0boO9YpFBnHA/edit?usp=sharing)
 
-___
-© 2021  Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.	
+---
+
+© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
